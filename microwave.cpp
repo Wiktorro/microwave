@@ -1,3 +1,6 @@
+// Copyright © 2024 Wiktor Mis
+// Copyright © 2024 Wiktor Mis
+
 #include "microwave.hpp"
 
 void MicrowaveImpl::RegisterDoorOpenChangedCallBack(std::function<void(bool)> callback) {

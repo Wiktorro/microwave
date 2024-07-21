@@ -1,0 +1,3 @@
+[gerrit]
+defaultbranch=master
+defaultremote=origin

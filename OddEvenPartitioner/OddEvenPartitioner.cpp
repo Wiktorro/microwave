@@ -23,6 +23,72 @@ Expected output:
 {1, 3, 5, 4, 2, 8}
 
 You can name your implementation class however you like (for example, OddEvenPartitioner).
+
+#include <iostream>
+#include <array>
+#include <cstdlib>
+#include <ctime>
+#include  <cstdlib>
+	// <math> //for std
+
+// #define RAND_MAX 30 // attempt limit here , but doesnt work...
+	
+	
+bool test(int start,int end) // unused for now
+{
+bool evenPrev = false, evenCurr = false;
+//if(start  end)
+  //  return false; // 
+
+
+if
+(1 == start%2 && 0 == end%2)
+//(start < end)
+{
+ return false;
+}
+
+return true;
+}
+
+void generateData(int size=20)
+{
+    for(int i =0; i< size; ++i)
+    {
+    std::cout<<rand()%30 << ", ";
+    }
+}
+
+template<typename T>
+void generateData(T& container)
+{
+    for(auto& i : container)
+    {
+    i = rand()%30;
+    // std::cout<<rand()%30 << ", ";
+    }
+}
+
+template<typename T>
+void printData(const T& container)
+{
+    for(const auto& i : container)
+    {
+    std::cout<<i << ", ";
+    }
+}
+
+int main()
+{
+    std::cout<<"Hello World\n";
+    std::srand(std::time({})); // use current time as seed for random generator
+    std::array<int,20>  data; // for passing arrays cant see bounds
+    generateData(data);
+    
+    printData(data);
+
+    return 0;
+}
 */
 //
 

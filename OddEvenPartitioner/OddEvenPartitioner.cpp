@@ -90,6 +90,12 @@ int main()
     return 0;
 }
 */
+namespace {
+std::vector<int> INPUT_SHORT{4, 1, 3, 2, 8, 5};
+std::vector<int> EXPECTED_SHORT{1, 3, 5, 4, 2, 8};
+std::vector<int> INPUT_LONG{13, 16, 27, 25, 23, 25, 16, 12, 9, 1, 2, 7, 20, 19, 23, 16, 0, 6, 22, 16  };
+std::vector<int> EXPECTED_LONG{13, 16, 27, 25, 23, 25, 16, 12, 9, 1, 2, 7, 20, 19, 23, 16, 0, 6, 22, 16  };
+}
 //
 #include <iostream>
 #include <vector>
